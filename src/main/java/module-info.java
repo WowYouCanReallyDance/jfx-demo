@@ -6,6 +6,7 @@ module com.demos.jfxdemo {
     requires javafx.media;
     requires javafx.swing;
     requires javafx.web;
+    requires com.google.common;
 
     exports com.demos.jfxdemo;
 }
