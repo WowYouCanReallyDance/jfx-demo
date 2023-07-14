@@ -22,8 +22,9 @@
         <project.reporting.outputEncoding>${charset}</project.reporting.outputEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <hutool.version>5.8.9</hutool.version>
         <guava.version>31.1-jre</guava.version>
+        <apache-commons-lang3>3.12.0</apache-commons-lang3>
+        <apache-commons-collections4>4.4</apache-commons-collections4>
         <fastjson.version>2.0.16</fastjson.version>
         <mainClass>com.demos.jfxdemo/com.demos.jfxdemo.MainApplication</mainClass>
     </properties>
@@ -73,14 +74,19 @@
         </dependency>-->
         <!-- Tools && Utils lib -->
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>${hutool.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache-commons-lang3}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${apache-commons-collections4}</version>
         </dependency>
     </dependencies>
 
